@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hao Deng</title>
+<meta name="description" content="Hao Deng, control engineer. PhD in Automatic Control, Paris-Saclay University. Neural-network-based control, fault-tolerant control, state estimation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #5b6370;
+    --accent: #1a5fb4;
+    --line: #e3e6ea;
+    --bar: #1a5fb4;
+    --bar-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15181c;
+      --text: #e6e8eb;
+      --muted: #a0a7b1;
+      --accent: #7fb0f0;
+      --line: #2c3138;
+      --bar: #1d2a3b;
+      --bar-text: #e6e8eb;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15181c;
+    --text: #e6e8eb;
+    --muted: #a0a7b1;
+    --accent: #7fb0f0;
+    --line: #2c3138;
+    --bar: #1d2a3b;
+    --bar-text: #e6e8eb;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bar);
+  }
+  nav ul {
+    max-width: 920px; margin: 0 auto; padding: 0 16px;
+    display: flex; gap: 24px; list-style: none;
+    overflow-x: auto;
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 15px;
+  }
+  nav a {
+    display: block; padding: 14px 0;
+    color: var(--bar-text); text-decoration: none; white-space: nowrap;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  main { max-width: 920px; margin: 0 auto; padding: 48px 16px 64px; }
+
+  header.intro {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 40px;
+    align-items: start;
+  }
+  h1 { font-size: 34px; margin: 0 0 20px; font-weight: 700; }
+  .role { font-weight: 600; margin: 0; }
+  .affil { margin: 0 0 20px; }
+  .contact { border-collapse: collapse; font-size: 15px; }
+  .contact td { padding: 2px 16px 2px 0; vertical-align: top; }
+  .contact td:first-child { color: var(--muted); }
+  .photo {
+    width: 220px; height: auto; display: block;
+    border-radius: 4px;
+  }
+
+  section { margin-top: 48px; }
+  h2 {
+    font-size: 22px; margin: 0 0 16px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 14px; }
+
+  .entry { margin-bottom: 22px; }
+  .entry-head {
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .entry-title { font-weight: 600; }
+  .entry-meta {
+    color: var(--muted);
+    font-family: "Source Sans 3", Arial, sans-serif; font-size: 15px;
+  }
+  .entry-sub { font-style: italic; }
+  .entry ul { margin: 6px 0 0; padding-left: 20px; }
+  .entry li { margin-bottom: 4px; }
+
+  .skills { margin: 0; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0 0 10px; }
+
+  .todo {
+    background: #fff4ce; color: #5c4400;
+    padding: 2px 6px; border-radius: 3px;
+    font-family: "Source Sans 3", Arial, sans-serif; font-size: 14px;
+  }
+
+  footer {
+    max-width: 920px; margin: 0 auto; padding: 24px 16px 40px;
+    color: var(--muted); font-size: 14px;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 640px) {
+    main { padding-top: 32px; }
+    header.intro { grid-template-columns: 1fr; gap: 24px; }
+    .photo { order: -1; width: 160px; }
+    h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="intro" id="about">
+    <div>
+      <h1>Hao Deng</h1>
+      <p class="role">Control Engineer &middot; PhD in Automatic Control</p>
+      <p class="affil">Paris-Saclay University, France</p>
+      <table class="contact">
+        <tr><td>Location</td><td>Paris, France &middot; open to relocation</td></tr>
+        <tr><td>Email</td><td>dhjasonlap [at] outlook [dot] com</td></tr>
+        <!-- TODO: replace the two "#" links below with your real profile URLs -->
+        <!-- <tr><td>Profiles</td><td><a href="#">Google Scholar</a> &middot; <a href="#">ORCID</a></td></tr> -->
+      </table>
+    </div>
+    <img class="photo" src="photo.jpg" alt="Photo of Hao Deng">
+  </header>
+
+  <section>
+    <p>I am a control engineer with a PhD in Automatic Control from Paris-Saclay University, defended in October 2026. My doctoral work is on neural-network-based control: stability analysis of Echo State Networks and LMI-based controller design for them, including MIMO and adaptive ESNs. I have also worked on fault-tolerant control of descriptor systems and on observer design.</p>
+    <p>Before the PhD, I worked on state-of-health estimation of power modules at Fraunhofer ISIT, and on field-oriented and model predictive control of PMSM drives at Ecole Centrale de Nantes.</p>
+    <p>I am looking for industry positions in control engineering, starting January 2027. I am eligible for the EU Blue Card.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research interests</h2>
+    <ul>
+      <li>Neural-network-based control with stability guarantees (Echo State Networks, reservoir computing)</li>
+      <li>LMI-based controller and observer synthesis</li>
+      <li>Fault-tolerant control under actuator and sensor faults</li>
+      <li>Robust control of LPV and polytopic systems</li>
+      <li>State estimation and sensor fusion</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Paris-Saclay University</span>
+        <span class="entry-meta">Oct 2023 &ndash; Sep 2026 &middot; Gif-sur-Yvette, France</span>
+      </div>
+      <div class="entry-sub">Doctoral Researcher in Neural Network Control</div>
+      <ul>
+        <li>Stability analysis of Echo State Networks and LMI-based controller design, extended to MIMO and adaptive ESNs.</li>
+        <li>Fault-tolerant control algorithms for descriptor systems under actuator and sensor faults.</li>
+        <li>Sensitivity and stability analyses under polytopic uncertainty and varying load conditions.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">HM Hochschule M&uuml;nchen</span>
+        <span class="entry-meta">May &ndash; Jun 2025, Jul 2026 &middot; Munich, Germany</span>
+      </div>
+      <div class="entry-sub">Visiting PhD Researcher, Control Systems Lab (Prof. Daniel Ossmann)</div>
+      <ul>
+        <li>Robust controllers for recurrent neural network systems with guaranteed stability.</li>
+        <li>Simulation campaigns evaluating closed-loop performance KPIs in the frequency and time domains.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Fraunhofer Institute for Silicon Technology (ISIT)</span>
+        <span class="entry-meta">Mar &ndash; Aug 2023 &middot; Kiel, Germany</span>
+      </div>
+      <div class="entry-sub">Master's thesis, power electronics modelling</div>
+      <ul>
+        <li>State-of-health estimation of power modules through covariance-weighted fusion of multiple observers; reduced estimation error by 25%.</li>
+        <li>System-level models of power electronic subsystems in MATLAB/Simulink, with parameters identified and validated on hardware-in-the-loop tests. Thesis grade 1.0.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Ecole Centrale de Nantes</span>
+        <span class="entry-meta">Aug 2022 &ndash; Feb 2023 &middot; Nantes, France</span>
+      </div>
+      <div class="entry-sub">Intern, motor control for EV applications</div>
+      <ul>
+        <li>Field-oriented control and model predictive control of a PMSM in MATLAB/Simulink.</li>
+        <li>Tuned current and speed loops for low torque ripple; compared PI, state-feedback and MPC controllers in transient response.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>Three first-author IEEE journal papers and five presentations at international control conferences.</p>
+    <!-- TODO: list each paper here, e.g.
+    <p><b>H. Deng</b>, A. Coauthor, B. Coauthor. "Title of the paper." <i>IEEE Transactions on ...</i>, vol. X, no. Y, pp. 1-10, 2025. <a href="https://doi.org/...">[DOI]</a></p>
+    -->
+    <!-- <p><span class="todo">Paper list to be added</span></p> -->
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Ph.D. in Automatic Control</span>
+        <span class="entry-meta">2023 &ndash; 2026</span>
+      </div>
+      <div>Paris-Saclay University, France. Defended October 2026.</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">M.Sc. in Electric Vehicle Propulsion and Control</span>
+        <span class="entry-meta">2021 &ndash; 2023</span>
+      </div>
+      <div>Erasmus Mundus Joint Master: Ecole Centrale de Nantes and Kiel University. Grade 1.2 (German scale). Erasmus Mundus Excellence Scholarship.</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">B.Eng. (Hons) in Electronics and Electrical Engineering</span>
+        <span class="entry-meta">2017 &ndash; 2021</span>
+      </div>
+      <div>University of Glasgow, UK. First Class Honours (top 2%). Thesis on an embedded autonomous vehicle: hardware and PCB design, sensor fusion for obstacle detection on a microcontroller.</div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Programming</dt>
+      <dd>MATLAB &amp; Simulink, Python, C/C++</dd>
+      <dt>Tools</dt>
+      <dd>YALMIP, NumPy, Matplotlib, Git, LaTeX</dd>
+      <dt>Languages</dt>
+      <dd>Mandarin (native), English (C2), German (A1)</dd>
+    </dl>
+  </section>
+</main>
+
+<footer>Last updated October 2026</footer>
+
+</body>
+</html>
